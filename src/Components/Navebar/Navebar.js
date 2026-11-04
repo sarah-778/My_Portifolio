@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navebar.css";
 import logo from "../../assets/logo.jpg"; // Your logo image
 
@@ -7,13 +8,16 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Close mobile menu when a link is clicked
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <a href="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Logo" className="logo-image" />
-        </a>
+        </Link>
 
         {/* Hamburger Icon */}
         <div className="menu-icon" onClick={toggleMenu}>
@@ -22,11 +26,11 @@ function Navbar() {
 
         {/* Nav Links */}
         <ul className={isOpen ? "nav-links active" : "nav-links"}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Me</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={closeMenu}>About Me</Link></li>
+          <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
         </ul>
       </div>
     </nav>
