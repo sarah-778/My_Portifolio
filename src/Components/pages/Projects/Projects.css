@@ -1,0 +1,99 @@
+.projects {
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-category {
+  margin-bottom: 30px;
+}
+
+.project-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: left;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-grid {
+  display: grid;
+  /* Limits maximum card width so rows stay neat and balanced */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: start; /* Aligns cards neatly to the left */
+}
+
+/* Project Card */
+.project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.project-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects {
+    padding: 25px 15px;
+  }
+
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-category h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .projects-grid {
+    justify-content: center; /* Center-align cards on mobile devices */
+  }
+
+  .project-card img {
+    height: 160px;
+  }
+}
