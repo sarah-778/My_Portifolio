@@ -1,28 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navebar.css";
-import logo from "../../assets/logo.jpg"; // Your logo image
+import logo from "../../assets/logo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
-  // Close mobile menu when a link is clicked
   const closeMenu = () => setIsOpen(false);
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* Hamburger Icon on the Left */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {isOpen ? "✖" : "☰"}
+        </div>
+
         {/* Logo */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Logo" className="logo-image" />
         </Link>
-
-        {/* Hamburger Icon */}
-        <div className="menu-icon" onClick={toggleMenu}>
-          {isOpen ? "✖" : "☰"}
-        </div>
 
         {/* Nav Links */}
         <ul className={isOpen ? "nav-links active" : "nav-links"}>
