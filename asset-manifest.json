@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.affedaf8.css",
-    "main.js": "/my-portfolio/static/js/main.ed49ce6e.js",
-    "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
-    "static/media/Flyer.jpg": "/my-portfolio/static/media/Flyer.fb73e46c7e6301fb4895.jpg",
-    "static/media/logo.jpg": "/my-portfolio/static/media/logo.feeb96deeb462aaccdde.jpg",
-    "static/media/about.png": "/my-portfolio/static/media/about.83575dd8af1b73818e6e.png",
-    "static/media/IT logo.jpg": "/my-portfolio/static/media/IT logo.b75a745ab308703147bd.jpg",
-    "static/media/Business.png": "/my-portfolio/static/media/Business.beae0d3a7af278dea2b4.png",
-    "static/media/EthernetTermination.jpg": "/my-portfolio/static/media/EthernetTermination.55813aed9d421c7ff54c.jpg",
-    "static/media/configure.jpg": "/my-portfolio/static/media/configure.d0319fb442d8ee82403f.jpg",
-    "static/media/hardware.jpg": "/my-portfolio/static/media/hardware.d5928bcb96b0d0f46f23.jpg",
-    "static/media/Pre.jpg": "/my-portfolio/static/media/Pre.0f462a2013cadc886a39.jpg",
-    "index.html": "/my-portfolio/index.html",
-    "main.affedaf8.css.map": "/my-portfolio/static/css/main.affedaf8.css.map",
-    "main.ed49ce6e.js.map": "/my-portfolio/static/js/main.ed49ce6e.js.map",
-    "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
+    "main.css": "/My_Portifolio/static/css/main.affedaf8.css",
+    "main.js": "/My_Portifolio/static/js/main.6b14be3d.js",
+    "static/js/453.438d9e50.chunk.js": "/My_Portifolio/static/js/453.438d9e50.chunk.js",
+    "static/media/Flyer.jpg": "/My_Portifolio/static/media/Flyer.fb73e46c7e6301fb4895.jpg",
+    "static/media/logo.jpg": "/My_Portifolio/static/media/logo.feeb96deeb462aaccdde.jpg",
+    "static/media/about.png": "/My_Portifolio/static/media/about.83575dd8af1b73818e6e.png",
+    "static/media/IT logo.jpg": "/My_Portifolio/static/media/IT logo.b75a745ab308703147bd.jpg",
+    "static/media/Business.png": "/My_Portifolio/static/media/Business.beae0d3a7af278dea2b4.png",
+    "static/media/EthernetTermination.jpg": "/My_Portifolio/static/media/EthernetTermination.55813aed9d421c7ff54c.jpg",
+    "static/media/configure.jpg": "/My_Portifolio/static/media/configure.d0319fb442d8ee82403f.jpg",
+    "static/media/hardware.jpg": "/My_Portifolio/static/media/hardware.d5928bcb96b0d0f46f23.jpg",
+    "static/media/Pre.jpg": "/My_Portifolio/static/media/Pre.0f462a2013cadc886a39.jpg",
+    "index.html": "/My_Portifolio/index.html",
+    "main.affedaf8.css.map": "/My_Portifolio/static/css/main.affedaf8.css.map",
+    "main.6b14be3d.js.map": "/My_Portifolio/static/js/main.6b14be3d.js.map",
+    "453.438d9e50.chunk.js.map": "/My_Portifolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.affedaf8.css",
-    "static/js/main.ed49ce6e.js"
+    "static/js/main.6b14be3d.js"
   ]
 }
