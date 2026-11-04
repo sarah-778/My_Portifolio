@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-/* Make the logo perfectly circular */
+/* Circular Logo Styling */
 .navbar-logo .logo-image {
   height: 45px;
   width: 45px;
@@ -57,6 +57,7 @@
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
+    order: 2;
   }
 
   .nav-menu-wrapper {
