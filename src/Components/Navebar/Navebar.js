@@ -12,24 +12,27 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Hamburger Icon on the Left */}
-        <div className="menu-icon" onClick={toggleMenu}>
-          {isOpen ? "✖" : "☰"}
-        </div>
-
-        {/* Logo */}
+        {/* Logo on the Left */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Logo" className="logo-image" />
         </Link>
 
-        {/* Nav Links */}
-        <ul className={isOpen ? "nav-links active" : "nav-links"}>
-          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/about" onClick={closeMenu}>About Me</Link></li>
-          <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-        </ul>
+        {/* Nav Links & Hamburger placed near Contact */}
+        <div className={`nav-menu-wrapper ${isOpen ? "active" : ""}`}>
+          <ul className="nav-links">
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>About Me</Link></li>
+            <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+            {/* Contact link placed right before the hamburger */}
+            <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* Hamburger Icon positioned near/before Contact on mobile */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {isOpen ? "✖" : "☰"}
+        </div>
       </div>
     </nav>
   );
