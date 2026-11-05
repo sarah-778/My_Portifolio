@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./Contact.css";
+import { FaWhatsapp, FaLinkedin, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import "./Contact.css"; // (or Contact_2.css depending on your file name)
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -17,7 +19,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowLinks(true);
+    setShowLinks(true); // show social links after form submit
   };
 
   return (
@@ -60,6 +62,7 @@ function Contact() {
             </button>
           </form>
 
+          {/* Show social/messaging links after form submission */}
           {showLinks && (
             <div className="contact-links">
               <h4>Send your message via:</h4>
@@ -72,28 +75,28 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                WhatsApp
+                <FaWhatsapp /> WhatsApp
               </a>
               <a
                 href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                <FaLinkedin /> LinkedIn
               </a>
               <a
                 href="https://x.com/sorishaba526?t=6PKMBaYBX0f4oCRVrRC3hQ&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                X (Twitter)
+                <FaXTwitter /> X (Twitter)
               </a>
               <a
                 href="https://www.instagram.com/sorishaba_s?igsh=MWphbDI3dDk0ejhjNw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                <FaInstagram /> Instagram
               </a>
             </div>
           )}
@@ -106,13 +109,13 @@ function Contact() {
           <div className="info-group">
             <h4>WhatsApp & Phone Numbers</h4>
             <div className="info-item">
-              <span>📱</span>
+              <FaPhone className="info-icon" />
               <a href="https://wa.me/256786315298" target="_blank" rel="noopener noreferrer">
                 0786315298
               </a>
             </div>
             <div className="info-item">
-              <span>📱</span>
+              <FaPhone className="info-icon" />
               <a href="https://wa.me/256789165684" target="_blank" rel="noopener noreferrer">
                 0789165684
               </a>
@@ -122,12 +125,16 @@ function Contact() {
           <div className="info-group">
             <h4>Email Addresses</h4>
             <div className="info-item">
-              <span>✉️</span>
-              <a href="mailto:sorishaba526@gmail.com">sorishaba526@gmail.com</a>
+              <FaEnvelope className="info-icon" />
+              <a href="mailto:sorishaba526@gmail.com">
+                sorishaba526@gmail.com
+              </a>
             </div>
             <div className="info-item">
-              <span>✉️</span>
-              <a href="mailto:sarah.orishaba2002@gmail.com">sarah.orishaba2002@gmail.com</a>
+              <FaEnvelope className="info-icon" />
+              <a href="mailto:sarah.orishaba2002@gmail.com">
+                sarah.orishaba2002@gmail.com
+              </a>
             </div>
           </div>
         </div>

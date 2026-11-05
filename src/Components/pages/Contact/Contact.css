@@ -116,8 +116,9 @@ form textarea {
   margin-bottom: 0.6rem;
 }
 
-.info-item span {
+.info-icon {
   font-size: 1.2rem;
+  color: #007acc;
 }
 
 .info-item a {
@@ -146,7 +147,9 @@ form textarea {
 }
 
 .contact-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 0.3rem;
   padding: 0.6rem 1.1rem;
   background: #007acc;
