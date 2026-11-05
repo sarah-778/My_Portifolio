@@ -17,7 +17,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowLinks(true); // show social links after form submit
+    setShowLinks(true);
   };
 
   return (
@@ -60,7 +60,6 @@ function Contact() {
             </button>
           </form>
 
-          {/* Show social/messaging links after form submission */}
           {showLinks && (
             <div className="contact-links">
               <h4>Send your message via:</h4>
@@ -76,7 +75,7 @@ function Contact() {
                 WhatsApp
               </a>
               <a
-                href="www.linkedin.com/in/sarah-orishaba-15229a336"
+                href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -100,12 +99,12 @@ function Contact() {
           )}
         </div>
 
-        {/* Right Side: Contact Information & WhatsApp */}
+        {/* Right Side: Direct Contact Information */}
         <div className="contact-info-card">
           <h3>Direct Info</h3>
 
           <div className="info-group">
-            <h4>WhatsApp & Phone</h4>
+            <h4>WhatsApp & Phone Numbers</h4>
             <div className="info-item">
               <span>📱</span>
               <a href="https://wa.me/256786315298" target="_blank" rel="noopener noreferrer">
@@ -124,15 +123,11 @@ function Contact() {
             <h4>Email Addresses</h4>
             <div className="info-item">
               <span>✉️</span>
-              <a href="mailto:sorishaba526@gmail.com">
-                sorishaba526@gmail.com
-              </a>
+              <a href="mailto:sorishaba526@gmail.com">sorishaba526@gmail.com</a>
             </div>
             <div className="info-item">
               <span>✉️</span>
-              <a href="mailto:sarah.orishaba2002@gmail.com">
-                sarah.orishaba2002@gmail.com
-              </a>
+              <a href="mailto:sarah.orishaba2002@gmail.com">sarah.orishaba2002@gmail.com</a>
             </div>
           </div>
         </div>

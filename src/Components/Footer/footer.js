@@ -1,58 +1,34 @@
 import React from "react";
-import { Mail } from "lucide-react"; 
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaXTwitter,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa6"; // Font Awesome 6
 import "./Footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        {/* Brand */}
-        <div className="footer-brand">Sarah Orishaba</div>
-
-        {/* Social Links */}
-        <div className="footer-links">
-          <a href="mailto:sorishaba526@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Mail size={20} /> Email
-          </a>
-          <a href="https://github.com/sarah-778" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={20} /> GitHub
-          </a>
-          <a href="www.linkedin.com/in/sarah-orishaba-15229a336" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={20} /> LinkedIn
-          </a>
-          <a href="https://www.instagram.com/sorishaba_s?igsh=MWphbDI3dDk0ejhjNw==" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={20} /> Instagram
-          </a>
-          <a href="https://x.com/sorishaba526?t=6PKMBaYBX0f4oCRVrRC3hQ&s=09" target="_blank" rel="noopener noreferrer">
-            <FaXTwitter size={20} /> X
-          </a>
-          <a
-            href="https://wa.me/256786315298" // your WhatsApp link
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp size={20} /> WhatsApp
-          </a>
-          <a href="https://www.youtube.com/@orishabasarah-u1s" target="_blank" rel="noopener noreferrer">
-            <FaYoutube size={20} /> YouTube
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div className="footer-copy">
-          &copy; {new Date().getFullYear()} Sarah Orishaba. All rights reserved.
-        </div>
+      <div className="social-icons">
+        <a href="https://wa.me/256786315298" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+          📱
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          💼
+        </a>
+        <a href="https://x.com/sorishaba526?t=6PKMBaYBX0f4oCRVrRC3hQ&s=09" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+        X
+        </a>
+        <a href="https://www.instagram.com/sorishaba_s?igsh=MWphbDI3dDk0ejhjNw==" target="_blank" rel="noopener noreferrer" title="Instagram">
+          📸
+        </a>
       </div>
+
+      <div className="footer-links">
+        <a href="mailto:sorishaba526@gmail.com">sorishaba526@gmail.com</a>
+        <a href="mailto:sarah.orishaba2002@gmail.com">sarah.orishaba2002@gmail.com</a>
+        <a href="https://wa.me/256786315298" target="_blank" rel="noopener noreferrer">0786315298</a>
+        <a href="https://wa.me/256789165684" target="_blank" rel="noopener noreferrer">0789165684</a>
+      </div>
+
+      <p>&copy; {new Date().getFullYear()} Sarah Orishaba. All rights reserved.</p>
     </footer>
   );
-};
+}
 
 export default Footer;

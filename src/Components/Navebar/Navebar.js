@@ -16,7 +16,6 @@ function Navbar() {
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Logo" className="logo-image" />
         </Link>
-
         {/* Navigation Links and Hamburger Menu */}
         <div className={`nav-menu-wrapper ${isOpen ? "active" : ""}`}>
           <ul className="nav-links">
